@@ -1,0 +1,27 @@
+{
+  "name": "react-reverse-context",
+  "version": "0.1.0",
+  "description": "React's Context API but with Provider inside Consumer",
+  "main": "index.js",
+  "author": "Eedrah <eedrah@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eedrah/react-reverse-context.git"
+  },
+  "keywords": [
+    "react",
+    "context",
+    "reverse"
+  ],
+  "bugs": {
+    "url": "https://github.com/eedrah/react-reverse-context/issues"
+  },
+  "homepage": "https://github.com/eedrah/react-reverse-context#readme",
+  "dependencies": {},
+  "devDependencies": {},
+  "peerDependencies": {}
+}
