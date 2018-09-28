@@ -1,0 +1,21 @@
+{
+  // Install instructions:
+  // yarn add --dev eslint-config-prettier eslint-plugin-prettier eslint-config-react-app
+  // And then install the peer dependencies returned from the above command
+
+  "plugins": ["react", "prettier"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "react-app",
+    "prettier",
+    "prettier/react"
+  ],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      { "singleQuote": true, "trailingComma": "es5", "semi": false }
+    ],
+    "no-console": "off"
+  }
+}
