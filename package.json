@@ -21,7 +21,9 @@
     "url": "https://github.com/eedrah/react-reverse-context/issues"
   },
   "homepage": "https://github.com/eedrah/react-reverse-context#readme",
-  "dependencies": {},
+  "dependencies": {
+    "prop-types": "^15.6.2"
+  },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
     "eslint": "^4.1.1",
