@@ -6,7 +6,7 @@
   "author": "Eedrah <eedrah@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -25,7 +25,11 @@
     "prop-types": "^15.6.2"
   },
   "devDependencies": {
+    "babel-core": "^6.26.3",
     "babel-eslint": "^7.2.3",
+    "babel-jest": "^23.6.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
     "eslint": "^4.1.1",
     "eslint-config-prettier": "^3.1.0",
     "eslint-config-react-app": "^2.1.0",
@@ -34,7 +38,10 @@
     "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-prettier": "^2.7.0",
     "eslint-plugin-react": "^7.1.0",
-    "prettier": ">= 0.11.0"
+    "jest": "^23.6.0",
+    "prettier": ">= 0.11.0",
+    "react": "^16.5.2",
+    "react-test-renderer": "^16.5.2"
   },
   "peerDependencies": {
     "react": "^16.3 || ^17"

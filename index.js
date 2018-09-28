@@ -1,5 +1,5 @@
 import React from 'react'
-import { func, any, element } from 'prop-types'
+import { func, any, object } from 'prop-types'
 
 class InnerReverseProvider extends React.Component {
   constructor(props) {
@@ -22,7 +22,8 @@ const ReverseProvider = ({ value, ContextConsumer }) => (
 )
 ReverseProvider.propTypes = {
   value: any.isRequired,
-  ContextConsumer: element.isRequired,
+  // Need a better proptype. See https://github.com/facebook/prop-types/issues/223
+  ContextConsumer: object.isRequired,
 }
 
 class ReverseConsumer extends React.Component {
@@ -47,7 +48,8 @@ class ReverseConsumer extends React.Component {
 }
 ReverseConsumer.propTypes = {
   defaultValue: any,
-  ContextProvider: element.isRequired,
+  // Need a better proptype. See https://github.com/facebook/prop-types/issues/223
+  ContextProvider: object.isRequired,
   children: func.isRequired,
 }
 
