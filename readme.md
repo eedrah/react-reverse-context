@@ -1,4 +1,9 @@
 # react-reverse-context
+![npm](https://img.shields.io/npm/v/react-reverse-context.svg)
+![npm bundle size (minified + gzip)](https://img.shields.io/bundlephobia/minzip/react-reverse-context.svg)
+![NpmLicense](https://img.shields.io/npm/l/react-reverse-context.svg)
+![GitHub issues](https://img.shields.io/github/issues/eedrah/react-reverse-context.svg)
+
 React's Context API is great. It allows us to pass an object down the react tree to any level that requests it. But do you wish sometimes to pass something up? Go in the reverse direction? Reverse Context can help.
 
 ## Demo, ideas, and example usage
