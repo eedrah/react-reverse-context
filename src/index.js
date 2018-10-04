@@ -6,6 +6,12 @@ class InnerReverseProvider extends React.Component {
     super(props)
     props.setValue(props.value)
   }
+  shouldComponentUpdate(nextProps) {
+    if (nextProps.value !== this.props.value) {
+      nextProps.setValue(nextProps.value)
+    }
+    return false
+  }
   render() {
     return null
   }
