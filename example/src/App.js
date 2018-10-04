@@ -1,13 +1,22 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-import ExampleComponent from 'react-reverse-context'
+import { createReverseContext } from 'react-reverse-context'
 
-export default class App extends Component {
-  render () {
+const { Consumer, Provider } = createReverseContext()
+
+export default class App extends React.Component {
+  render() {
     return (
-      <div>
-        <ExampleComponent text='Modern React component module' />
-      </div>
+      <Consumer>
+        {value => (
+          <div className="container">
+            <div className="beside">
+              <Provider value="foo" />
+            </div>
+            <div className="content">{value}</div>
+          </div>
+        )}
+      </Consumer>
     )
   }
 }
